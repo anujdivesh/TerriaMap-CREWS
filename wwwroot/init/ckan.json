@@ -1,0 +1,28 @@
+{
+    "corsDomains" : [
+        "data.gov.au",
+        "ga.gov.au",
+        "corsproxy.com",
+        "programs.communications.gov.au"
+    ],
+    "homeCamera": {
+        "west": 105,
+        "south": -45,
+        "east": 155,
+        "north": -5
+    },
+    "services": [],
+    "catalog": [
+        {
+            "name": "National Data Sets CKAN",
+            "type": "ckan",
+            "url": "http://ckan-nm.nicta.com.au",
+            "filterQuery": [ "q=res_format:WMS", "q=res_format:%22Esri%20REST%22" ],
+            "filterByWmsGetCapabilities": false,
+            "minimumMaxScaleDenominator": 1e10,
+            "wmsParameters": {"tiled" : true},
+            "blacklist": {
+            }
+        }
+    ]
+}

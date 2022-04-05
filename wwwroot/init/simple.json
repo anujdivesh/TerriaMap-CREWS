@@ -1,0 +1,372 @@
+{
+  "homeCamera": {
+    "north": -8,
+    "east": 158,
+    "south": -45,
+    "west": 109
+  },
+  "catalog": [
+    {
+      "type": "wms-group",
+      "name": "Test",
+      "url": "https://programs.communications.gov.au/geoserver/ows",
+      "members": [
+        {
+          "type": "wms",
+          "localId": "mybroadband%3AMyBroadband_ADSL_Availability",
+          "legends": [
+            {
+              "items": [
+                {
+                  "title": "A - Best",
+                  "color": "#6B0038"
+                },
+                {
+                  "title": "B",
+                  "color": "#F41911"
+                },
+                {
+                  "title": "C",
+                  "color": "#F67F00"
+                },
+                {
+                  "title": "D",
+                  "color": "#D78B6D"
+                },
+                {
+                  "title": "E - Worst",
+                  "color": "#ECD2BE"
+                },
+                {
+                  "title": "No data",
+                  "color": "rgba(0,0,0,0)",
+                  "outlineColor": "black",
+                  "addSpacingAbove": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "geojson",
+      "name": "GeoJSON Test",
+      "url": "test/bike_racks.geojson"
+    },
+    {
+      "type": "wms-group",
+      "name": "Marine water quality grids for the Great Barrier Reef region - monthly data",
+      "url": "proxy/_0d/http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1M"
+    },
+    {
+      "type": "wms-group",
+      "name": "WMS layers for the Australian Renewable Energy Mapping Infrastructure project.",
+      "url": "https://gis.aremi.data61.io/bom/wms"
+    },
+    {
+      "type": "magda",
+      "url": "https://data.gov.au",
+      "name": "Magda Item",
+      "isMappable": true,
+      "recordId": "ds-ga-93e51355-f5b9-4219-8dc4-815732d9e869"
+    },
+    {
+      "type": "csv",
+      "url": "test/incidents_notime.csv",
+      "name": "CSV Test"
+    },
+    {
+      "type": "csv",
+      "url": "test/localphotostories20092014.csv",
+      "name": "ABC Photo Stories"
+    },
+    {
+      "type": "csv",
+      "url": "test/NSW_LGA_NEXIS_201212.csv",
+      "name": "NSW LGA NEXIS 2012"
+    },
+    {
+      "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer",
+      "type": "esri-mapServer",
+      "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+      "name": "Surface Geology",
+      "rectangle": { "west": 106, "south": -52, "east": 172, "north": -8 },
+      "info": [
+        {
+          "name": "Licence",
+          "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+        }
+      ]
+    },
+    {
+      "name": "Brisbane 3D city model (aero3Dpro)",
+      "type": "3d-tiles",
+      "description": "![aero3Dpro](http://aero3dpro.com.au/images/aero3dpro-logo2.png)\n\nAero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/\n\nThese datasets use the [Cesium 3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles) format.",
+      "url": "https://sample.aero3dpro.com.au/BrisbaneCBD/Scene/recon_h_3DTiles.json",
+      "options": {
+        "maximumScreenSpaceError": 1,
+        "maximumNumberOfLoadedTiles": 1000
+      },
+      "rectangle": {
+        "west": 153.01,
+        "south": -27.484,
+        "east": 153.034,
+        "north": -27.46
+      }
+    },
+    {
+      "name": "Melbourne 3D city model (aero3Dpro)",
+      "type": "3d-tiles",
+      "description": "![aero3Dpro](http://aero3dpro.com.au/images/aero3dpro-logo2.png)\n\nAero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/\n\nThese datasets use the [Cesium 3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles) format.",
+      "url": "https://sample.aero3dpro.com.au/Melbourne/Scene/recon_h_3DTiles.json",
+      "options": {
+        "maximumScreenSpaceError": 1,
+        "maximumNumberOfLoadedTiles": 1000
+      },
+      "rectangle": {
+        "west": 144.868,
+        "south": -37.885,
+        "east": 145.018,
+        "north": -37.775
+      }
+    },
+    {
+      "name": "Sydney 3D city model (aero3Dpro)",
+      "type": "3d-tiles",
+      "description": "![aero3Dpro](http://aero3dpro.com.au/images/aero3dpro-logo2.png)\n\nAero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/\n\nThese datasets use the [Cesium 3D Tiles](https://github.com/AnalyticalGraphicsInc/3d-tiles) format.",
+      "url": "https://sample.aero3dpro.com.au/Sydney/Scene/recon_h_3DTiles.json",
+      "options": {
+        "maximumScreenSpaceError": 1,
+        "maximumNumberOfLoadedTiles": 1000
+      },
+      "rectangle": {
+        "west": 151.161,
+        "south": -33.923,
+        "east": 151.3075,
+        "north": -33.796
+      }
+    },
+    {
+      "type": "gltf",
+      "url": "https://cesiumjs.org/Cesium/Apps/SampleData/models/CesiumAir/Cesium_Air.glb",
+      "name": "Cesium Air",
+      "origin": {
+        "longitude": 151.197,
+        "latitude": -33.895,
+        "height": 100
+      },
+      "upAxis": "Y",
+      "forwardAxis": "X"
+    },
+    {
+      "type": "gtfs",
+      "url": "https://api.transport.nsw.gov.au/v1/gtfs/vehiclepos/buses",
+      "image": "images/icons/sydney_bus_icon_smaller.png",
+      "name": "NSW Live Transport - Buses",
+      "apiKey": "l4VnvZi4uQLSvD7lwN2ac7vIDJUJ3epYva4l",
+      "refreshInterval": 5,
+      "featureInfoTemplate": {
+        "name": "{{vehicle_trip_bus_number}}",
+        "template": "<b>Bus:</b> {{route_short_name}}<br><b>Occupancy:</b> {{occupancy_status_str}}<br><b>Speed:</b> {{speed_km}} km/h<br><b style='padding-right: 5px'>Direction:</b> <span style='transform: rotate({{bearing}}deg); width: 10px; display: inline-block' aria-label='{{bearing}} degrees' role='img' title='{{bearing}} degrees'>&#x2B06;</div>"
+      },
+      "model": {
+        "url": "lowpoly_bus/scene.gltf",
+        "scale": 0.3048,
+        "maximumDistance": 500.0,
+        "bearingDirectionProperty": "vehicle.position.bearing",
+        "compassDirectionProperty": "vehicle.position.compass"
+      }
+    },
+    {
+      "type": "csv",
+      "name": "All generation types",
+      "id": "54a553b4",
+      "info": [
+        {
+          "name": "Description",
+          "content": "The AEMO Actual Generation and Load data represents actual generation data for each scheduled generation unit, semi-scheduled generation unit, and non-scheduled generating systems (a non-scheduled generating system comprising non-scheduled generating units) for registered units in the National Electricity Market (NEM). The data is given in MegaWatt (MW). <br/> <br/>Detailed information about the AEMO Generation and Load data is available here: <br/> <br/>[http://aemo.com.au/Electricity/Data/Market-Management-System-MMS/Generation-and-Load](http://aemo.com.au/Electricity/Data/Market-Management-System-MMS/Generation-and-Load) <br/> <br/>Visualisation of AEMO current generation data is based on data files generated every 5 minutes available here: <br/> <br/>[http://www.nemweb.com.au/REPORTS/CURRENT/Dispatch_SCADA/](http://www.nemweb.com.au/REPORTS/CURRENT/Dispatch_SCADA/) <br/> <br/>Visualisation of AEMO historic data is based on daily data files available here: <br/> <br/>[http://www.nemweb.com.au/REPORTS/ARCHIVE/Dispatch_SCADA/](http://www.nemweb.com.au/REPORTS/ARCHIVE/Dispatch_SCADA/) <br/> <br/>AEMO provides a range of data. Raw data is provided in Comma Separated Values (CSV) flat file format to enable access to a range of market data. Recent files are stored in a directory for current reports, and older files are moved into the respective archive reports directory. <br/> <br/>All electricity data provided by AEMO is available here: <br/> <br/>[http://aemo.com.au/Electricity/Data](http://aemo.com.au/Electricity/Data)"
+        },
+        {
+          "name": "Updates",
+          "content": "The Actual Generation and Load data is updated in 5-minute intervals."
+        },
+        {
+          "name": "Data Custodian",
+          "content": "AEMO is the data custodian of electricity generation data displayed on AREMI. Please refer to attribution, licensing and copyrights provisions further on this page. <br/> <br/>The Australian Energy Market Operator (AEMO) was established by the Council of Australian Governments (COAG) to manage the National Electricity Market (NEM) and gas markets from 1 July 2009. <br/> <br/>AEMO’s core functions can be grouped into the following areas: 1) Electricity Market Operator; 2) Gas Markets Operator; 3) National Transmission Planner; 4) Transmission Services; 5) Energy Market Development. <br/> <br/>AEMO operates on a cost recovery basis as a corporate entity limited by guarantee under the Corporations Law. Its membership structure is split between government and industry, respectively 60 and 40 percent. Government members of AEMO include the Queensland, New South Wales, Victorian, South Australian and Tasmanian state governments, the Commonwealth and the Australian Capital Territory. <br/> <br/>As part of the role of managing the NEM and assisting industry, AEMO publishes electricity market data updated in 5 minute intervals and on a daily, monthly and annual basis. Categories of data published are: <br/> <br/>1) Price and demand; <br/>2) Forecast supply and demand; <br/>3) Market notices; <br/>4) Ancillary services; <br/>5) Network data; <br/>6) Pre-dispatch demand forecasting performance; <br/>7) Settlements; <br/>8) Market management system (MMS) (which includes Generation & Load data). <br/> <br/>More information on AEMO and services provided is available here: <br/> <br/>[http://aemo.com.au/About-AEMO](http://aemo.com.au/About-AEMO)"
+        },
+        {
+          "name": "Licensing, Terms & Conditions",
+          "content": "Australian Energy Market Operator (AEMO) is the data custodian for Generation & Load data sets, available on AEMO’s website. <br/><br/>AREMI is displaying the data under AEMO’s licencing and copyright conditions detailed below. <br/><br/>The data is provided for information only and is not intended for commercial use. AEMO does not guarantee the accuracy of the data or its availability at all times.<br/><br/>AEMO, or its licensors, are the owners of all copyright and all other intellectual property rights in the contents of the AEMO website (including text and images). Users may only use such contents for personal use or as authorised by AEMO. Here are the details of the AEMO’s copyright permissions: <br/><br/>AEMO Material comprises documents, reports, sound and video recordings and any other material created by or on behalf of AEMO and made publicly available by AEMO. All AEMO Material is protected by copyright under Australian law. A publication is protected even if it does not display the © symbol.  <br/><br/>In addition to the uses permitted under copyright laws, AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. There is no need to obtain specific permission to use AEMO Material in this way. Confidential documents and any reports commissioned by another person or body who may own the copyright in them and NOT AEMO Material, and these permissions do not apply to those documents. <br/><br/>More information on conditions of use of AEMO generated data and information is available on the AEMO website: [http://aemo.com.au/About-AEMO/Legal-Notices](http://aemo.com.au/About-AEMO/Legal-Notices)"
+        }
+      ],
+      "url": "https://services.aremi.data61.io/aemo/v6/csv/all",
+      "cacheDuration": "5m",
+      "rectangle": {
+        "west": 134,
+        "south": -47,
+        "east": 155,
+        "north": -13
+      },
+      "polling": {
+        "seconds": 300,
+        "shouldReplaceData": true
+      },
+      "columns": [
+        {
+          "name": "Station Name",
+          "type": "hidden"
+        },
+        {
+          "name": "Participant",
+          "type": "hidden"
+        },
+        {
+          "name": "Physical Unit No.",
+          "type": "hidden"
+        },
+        {
+          "name": "Aggregation",
+          "type": "hidden"
+        },
+        {
+          "name": "DUID",
+          "type": "hidden"
+        },
+        {
+          "name": "CSV for last 24h",
+          "type": "hidden"
+        },
+        {
+          "name": "CSV for all data",
+          "type": "hidden"
+        },
+        {
+          "name": "Latest 24h generation",
+          "type": "hidden"
+        },
+        {
+          "name": "Unit Size (MW)",
+          "type": "hidden"
+        }
+      ],
+      "activeStyle": "Current % of Max Cap",
+      "defaultColumn": {
+        "replaceWithZeroValues": [],
+        "replaceWithNullValues": ["-"]
+      },
+      "defaultStyle": {
+        "time": {
+          "timeColumn": null
+        },
+        "color": {
+          "nullColor": "rgba(255,255,255,0.1)",
+          "nullLabel": "No value",
+          "numberOfBins": 10,
+          "binColors": [
+            "rgb(94,79,162)",
+            "rgb(50,136,189)",
+            "rgb(102,194,165)",
+            "rgb(171,221,164)",
+            "rgb(230,245,152)",
+            "rgb(254,224,139)",
+            "rgb(253,174,97)",
+            "rgb(244,109,67)",
+            "rgb(213,62,79)",
+            "rgb(158,1,66)"
+          ]
+        }
+      },
+      "featureInfoTemplate": {
+        "name": "{{DUID}} - {{Station Name}}: {{Current % of Max Cap}}%",
+        "template": "<h3>{{Station Name}} ({{DUID}})</h3><p><strong>{{Participant}}</strong><div><strong>{{Current Output (MW)}}MW</strong> at {{Most Recent Output Time (AEST)}}</div><div><strong>{{Current % of Reg Cap}}%</strong> of {{Reg Cap (MW)}}MW registered capacity</div><div><strong>{{Current % of Max Cap}}%</strong> of {{Max Cap (MW)}}MW maximum capacity</div></p><table>  <tbody>    <tr>      <td>Category</td>      <td class='strong'>{{Category}}</td>    </tr>    <tr>      <td>Classification</td>      <td class='strong'>{{Classification}}</td>    </tr>    <tr>      <td>Fuel Source</td>      <td class='strong'>{{Fuel Source - Primary}} ({{Fuel Source - Descriptor}})</td>    </tr>    <tr>      <td>Technology Type</td>      <td class='strong'>{{Technology Type - Primary}} ({{Technology Type - Descriptor}})</td>    </tr>    <tr>      <td>Physical Unit No.</td>      <td class='strong'>{{Physical Unit No_}}</td>    </tr>    <tr>      <td>Unit Size (MW)</td>      <td class='strong'>{{Unit Size (MW)}}</td>    </tr>    <tr>      <td>Aggregation</td>      <td class='strong'>{{Aggregation}}</td>    </tr>    <tr>      <td>Region</td>      <td class='strong'>{{Region}}</td>    </tr>    <tr><td>Power generation</td><td><chart id='{{DUID}}' title='{{Station Name}} ({{DUID}})' poll-seconds='300' poll-replace='true' sources='https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=1D,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=7D,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=1M,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=3M' source-names='1d,7d,1m,3m' downloads='https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=7D,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=1M,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}?offset=3M,https://services.aremi.data61.io/aemo/v6/duidcsv/{{#terria.urlEncodeComponent}}{{DUID}}{{/terria.urlEncodeComponent}}' download-names='7d,1m,3m,All available' preview-x-label='Last 24 hours' column-names='Time,Power Generation' column-units='Date,MW'></chart></td></tr>  </tbody></table>"
+      }
+    },
+    {
+      "name": "XY Plot",
+      "type": "csv",
+      "url": "build/TerriaJS/test/csv_nongeo/xy.csv"
+    },
+    {
+      "type": "esri-mapServer-group",
+      "name": "Catchment Scale Land Use",
+      "id": "354db2f2",
+      "url": "https://www.asris.csiro.au/arcgis/rest/services/abares/clum_50m_2018/MapServer",
+      "forceProxy": true
+    },
+    {
+      "type": "csv",
+      "name": "Wavebuoy",
+      "url": "http://192.168.8.140:8080/anuj/wavebuoy.csv",
+      "description": "Real-Time wavebuoy observations.",
+      "cacheDuration": "1m",
+      "rectangle": {
+        "west": 172.503890991211,
+        "south": 1.117101459245526,
+        "east": 173.55033874511722,
+        "north": 1.7815579430975423
+      },
+      "isOpenInWorkbench":false,
+      "columns": [
+        {
+          "name": "col",
+          "type": "hidden"
+        },
+        {
+          "name": "url",
+          "type": "hidden"
+        },
+        {
+          "name": "name",
+          "type": "hidden"
+        }
+      ],
+      "featureInfoTemplate": {
+        "template": "<iframe src='http://202.0.156.66:8080/ds_kiri/wavebuoy.html' width='1000px'' height='500px' frameborder='0' scrolling='yes'></iframe>"
+      },
+      "id": "VV6xDI",
+      "shareKeys": [
+        "Root Group/Crews Datasets/Wavebuoy"
+      ]
+    },
+    {
+      "type": "wms",
+      "name": "Wave Height",
+      "url": "http://192.168.4.30:8080/ncWMS2/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.1.1&DATASET=5",
+      "opacity": 0.9,
+      "supportsColorScaleRange": true,
+      "layers": "5/u:v-group",
+      "styles": "default/default",
+      "maxRefreshIntervals": 9000,
+      "colorScaleMinimum": 0,
+      "description": "Wave height (in meters):  it is commonly used as a measure of the height of the ocean waves, although in physical oceanography it is defined as the mean of the highest third of the waves during a period of time, this quantity is intended to capture the wave height that an observer (i.e., seafarer, surfer) will perceive. ",
+      "isOpenInWorkbench":false,
+      "colorScaleMaximum": 2,   
+      "disableDimensionSelectors": false,
+      "tileErrorHandlingOptions": {
+        "ignoreUnknownTileErrors": true
+      },
+      "id": "GVLBll",
+      "shareKeys": [
+        "Root Group/Crews Datasets/KI Forecast/Wave Height"
+      ]
+    },
+    {
+      "name": "Point",
+      "type": "geojson",
+      "url": "https://gist.githubusercontent.com/steve9164/c517308cf52638e1ff3a2992e5aec3d1/raw/b53d846db4e870dca1681332db40962689aa7c35/point.geojson",
+      "style": {
+        //"marker-url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADjCAMAAADdXVr2AAAAwFBMVEXoHiX////+/v7t7e3s7OznHiX39/f6+vr9/f309PTv7+/y8vLr6+vmAADt8fHoGCDnAA/oExznChXnABDy+Pjxvr/nAAjt9fX45+jq4ODjb3L4/v7lnJ7lJCr58PDmvr/qhYjkoqTlVVnkaWzkNDroeXzmPkLkLzX34uLo0tPyxsfnYmbmqavoy8zjTVHrjY/119jkkJLlKzHtmp3jREnutrjki47xr7DmwMLmWFzwpafoZmnkt7jjlpjq2dr1z9FDmEtOAAAYrklEQVR4nN1dCUOjOhAmQHpZzrqt2rVbV+t9rce6p/7/f/UIkGRyQWihri/7nsaE0vlIMlcmg+NmBe14WRmirDrws5o/II1D0rhDGlHe2M+qqEcaR8imf0Qae8hFqO+FWUGkzEltN6/Sfhf1yec9xCjpcUpcdiuPX+rz78+JdnVE5zdwGDxfgedL5JNaz+fwavpzmvoZjsHi9cvRt+Xy4Pjn169Xx8eru18vl3sLPwPqkWfiSvAgJa4Ln1R5qa+9VCK6c3ijcOYvLh8PntJpnGYlKUuaTibTafR08O3Pfo+M48eDlxHtvR4dnATBJIkcbYmSNAhODl7O+/OwM3j5MtjxfX88JLXBmFQHpDok1Z28P28k8wz1SHWEavt7b3dPwdSEDGKcBqerL/uz0CsWpESJy1uLgc5bGdF+fqkrEV3QR27g7JDS62elR2pDUusPxcYd3lj07xj7s8bBvH9zdxqktdAYxDQ4W10Od4caSnb4/eVW0/fTfnKp43Gmlw2mXy4bX2Bq5WTwy8mAislg6EeLl9vYHhtDeLK8mIUqJTl9A1TOO1/h1GaiSWsJT8P0aud6z1X7R/Pz5WGQlERjB2Py0w7hJLr6ErpIpUTlBYxo10y01zq80eziIJlEmCLC9D/LkkyenrOV1Co8zhV8tirJUvbNS3ngi/1+0T/bP4hTpwkeFeD06VKlpOQaPmNlfg3RPm11hqT08sKr2saesTGvzhffp3xW8p9NAQZf7+c9kRI7+uRGUnfkgRnrnpZeMMD+UXh9mArg1Lo1wNVCIxgqZpOrJToXDK2IdW+2fxwwZrkhPMdJD18Q+oe0lvBznGDKUbDAWvA6CKPg617BP9qB5xuu1MoZAC/vR4urYJ1BqipJ8hyOauBVE13AG5AyHGVlSGp9Uhv1xcYBb+zlVRf2o8uT1EhmI8EASxQcjMPRKP/6wQ75qh6nb2CkL2/ccemljq/jGkYdD6qDRb8X/g0aqiiWZfJ0nunlQDBw+iSiPR3RhWDYUKwPxgfTgho+Tvrhaj6ICb58Z60FLZ4mAu14LSCGEgW/Zu8JD+09pByWQ7VMRxYOVoDpRZjfywm+h5vB22jt3R8mkLrWho2X+CD0Nll7WiYkNbp6zhle4KSewA3L9Bi5DThnT+Kc68u93ZuCZXYwZgK+FdpA7q2vtVxgQSAYtJbN4Qergr6tKmVo7ySxoL2NoQ2Wu2vDW9diWJymIu1YU2sL3+fZuhbDevZUb3g1WZ/0xp+bXM7XtPfWs9bD1TRbY/kqw0xe0R9WxmwjiFFyrljrvpW1vpZYn10HpbRmmCpIbj7IyieS0/72tBZ0kaxJ99olXhX0rQevmZ+z/5QIo2aFdcNnEbzM1/FzruGlni9jS5q0kBrjLNZz+jq09VL3uJdaq05W7jGEX4KGRAL+Y4HE0JTcWgkGaY9hDbH+EJnBtaVYa6Ro8AttQWuZLSeNiTSyVqyrFpNRfUrpOeocXngz1cDA+ezDuKjgslrOSVz8K/vKi0ovGnZ4G+ilnygndtGa/kaoa6UsvE00T12w1jco1feZfrJbe0Apa2jOzp+njsgoMJtJdOB4lQ6kIkPosGhRiQ4NzNuik7Gyx9CqK8nbOdG6xfjsdPiEKpExgjG7ltGP2XMp5imf2fRm9NHlF00/73aqtcw+T7VThxFs4JxryTr1o9HhfqfwxmcRe+Y1ZG1WDOZV/NilKyk8CpSlwdZa/hcWFhSYmtyHhkEHnZy0m87w8ko2Zemv6GHRbO1powJMoQK9U4NDmpMOiQfyrqA9iiLYhTlMCgTTlcifVCEYSpTB310TfXJ8AWl1JG25FCFI60pCn9bfKonSIMaHD2cPh0kc1weEGG9zOlZdSa6W6KZiHaGv4varXDUTFScnq+e3vUV/uL9/8+fz1UNg3nWRinT/4E/YkdaCzgP9V4qCC8MW8isJnv7ehLN8gfS8EQmZ612ucFwxhOZnllw1gtdEa7kzaptA+4LSjdSj4OrSD0deEV/AnQeLvw8xkH50ebFPMmZDuU9ZDV5HfoXWIrmSGoQKDM+MzxvyOhF1fPZpPtfdvz9f3AWJcgv4tzqGWcvk27wuvoFXoSupRjAMvwSN5VoU3I1D6P8Rw8Xun2wNY3DL074sGFpxJe2uWOiDItfVtVeQEn0KxQUsrhXUX9XyYuWBBvedaC2eeW4WmIH2W5QEn+96VfCyZ/bNTtaA55c+ru1Kkq+E9tVNBSEYyPWSCoyTk4UiPKVQTTScHQXs8QgWAzUGKSqmb0enqJpoCE/e2zJu1aO71LzyuC+Xc5cI7yFll0rdxdr9OxXhcYYpgOODGCxCG6J3spq9KynMZDowr41zh5X0JlT5E2AFHuVfy2nVfdRHOr2WiG7DlTQOTNaOvgTXM08NG1QmU1bhypCD1S9QvzFdtq+1hD8CjJmMFZ8uVp56xgAOQs8Onov2Ep3Uk+7Lr4geOoD3ucpBJq69/BEvrOG5888Bf2aQOTmcp2DGbHC2+FBjpaxm7YUHlfvogkGUlemjYn8Z117WnxlaRtbCJgSmU2V6ab32dJzTlZmcmzHOw4g+YMy1L2kPjNESnYz1+/tDhXOSRvQsCx3ljnD2Tj6HmlAGLee0lHuoDwgQGKfMwvMSf5vp4w8UuVf0908j+PFqzukkZF3byT1LrQXdSwpnNQuNMrVea1Vp10o2w35pnMO6L8r/ip7ClpUy9KmJ8psczwxGowneuVWEDJ36h2NreJYWw68m8KbXYRknLMd3ywdMWP9tkwig6NWrdCVxi8HKdBoOd5cpeHzqYxV1zuS8b3NT0Dj/VobeMVc348LQU1b+S+77GntUZ+/lp5lqrXUvPLaQC7QWPUn2VyEYyDeBrX4P9od/RP+wxJClL4svUbW17jZUysKvDSZPcoUEsV0n1rP+0UUT51n8jNrVWkYmDyd7ouUvUpncNYbnjfPNC9E0UO9fVuIXW3i2fs6HivA4zLSy4tf0OYfna4xG41Z/+BQp9zcKH+KLt/Nzas+GqV5gD1d+IeUCBTsIPg1M8QfGU2q7txFnKeVEYDtEmG4rldpn/Di39FJb7jH0q8U4nzu5r+5PqDD+0ptoFAzop7Itat6pSb+Hre7voUWTlR88hyZfsEGsZ7WfAu+qfprpctaq1oIWDdCtB6+JXH9feJnS0hzeU4P5YQ+v2dozCVoQvZ7V0tWs8dpbnEVULABPGftO+PW4du1xpQzpLEOXWYZUaxnjqoeLRc6Z/DQorkZz1vcuSsGD9eYsr5ILMsFQZc6uccCt2ocryl3iJ28o1nOljMtP80TJS/yrZa2lkLrsO2U/oDh6zuS8KbzZ91RQymmgD1OoqQ8rXwhTa63FFt7PJgZL8NJ49JpwFif+ZK2UiWvP5EoKV9bbqVlJfmvEbNXaCy90T88s1t+MFkN11gF9aGS/X9pjpiITkrwOK1IVqJrf/LHRTlhEYjvbzDqAXiq/X4Y3+V7hSkKqK6l3GslbKOJdBUOidEbUEN3I1/ImuOpMrnLKzaPDfa+JWH8OACBJMEjfSKJb2ncl9ZvFfEy/hQ3g9R5kxqK398rW0hFoBY9rLdxPoDvHcKjaY1UlfkWS1qLZfC77dx+pG9Du/pPPYdtZB+bVTnilJL/n2vgDTXX3PhagGYQrL8GPXttZB2q2UFiF1YL8EdsIhv4TM/VEiCprKW/dE4luIetA+AMuPmVpCCp18d/kS2gj1hFaxQ7crQBai8PYKDDciSPOguiGUUnjKsmg2xKI0tewHh5CcOHpNE7FaE+/N4XnG64EIiv8becn59REh6+hzpUE4fXRYxVLBpOeSUNn+gdZEN0w60DYyA1f4HN+zIVdNHq2ld+0f1fBNA28JR67Gvpg1oHBGlkHXqdVnjJKkGDRRMlRtv4qzNnF7ym4HKgmFVpLctVJqPiokVJflGh6vD8ziPUM3uVZE0W9LPFLJ1FJu39j4+iZS+ocjXd18EK0d2DONlHxRfFeN6Hi+4HNtytd09PrfMpAeKMwvLhLK4ZOL/JyT8cx6iZUPLwy805Bo5dao+Bk+bZAYTgaeflNUfj6fJWKaoIUjyavPV6Cy46yDqgb/BJxolgHYozkkbt6/HR/fn7+evHlaHkbBYkDGBE4MeSwcFVwSKO0IEhbdOJ1lXWgVxuvKg0jM20IE42DaUQOOgVTkoNOdISB0WPRF/xPzCvO9O+sq6wDXMEwjB4GoyccV5CtN4YcRKtI6hfdNoExx5gYkqOuDrihPYO3kxIHD7jx8wfSVJXOEJUXQ4FJrwWniOgOUbyceV2FiiNkPJpIqYXn97iAxoxWEFPFgDEsDLJZpT589brLOtC7MPBynUqtzEflCvWDOs4JOybLuV0owlpZB7zZsR6fXi7oEenQKBca7hS9csO/g6wDI9PwdVIUjOmq2/N73rzBweD2S/LacdaB3p7h9CWdbYC1CKG1WGQdkrgG/BTIPXgchTRMlrOOsw705t91w8e0FokxAvQgCkCW6YB90ntBSclUmeh1qM06oCd6rawD3viwzi7C2urmJV1uIetAeF3p0FV1E1ZpglV3bWYJbSFX0uxJNRxALDVsY61gngrT0hFnKVxy0vIsA+C7hxd+MYaWyo8dC78p89EPD+MqgLUIF+QB4t2ngiJbmTJx7Ng621ulW6uMlWCBu2KulzplTVbG+YfzPrLymqeCamDOMv5z3nq2UYsy2fcYfV24kkAyoe5luzJ347u5xxZLV1pLGYG3r05OVoF2jSTaC7pFiafeQqt4Rg+LDXIlNYM3mH2r4i6msokQDF62mMDS268Lc6lFajKX2AVCiU4H6yWwbJR1gClBc8mrJCplzG4VZiKzzKGfAou3kHaI2HXB8251vKld1gGrBJbkubi3+vjE6hGRjVT9oKk3S36GFYnFWso6ABcoeptCEtQ9BmH66c1ZcX5y1wN2ZPkeXYTbTmAp2O0Ke9T/li4R8KnKKuO6k9x/tJUElsz4XziRQpAGQkWx5aQkikTvHGk164BYnetONQlOPu3oadRQ+lHBvgMfj5/na9DXNOuA/LqJ/lOiEC3tFGtVakORpymDl3wNK1430VrWAXmuz+/lHSMsUMZ5vAjAAFAjCEt4F0oEUMdai1/0M9UTi3KP0yshUuarLPdE/HklhuFpGyawrMo6IAvHHuorsVKNS/WEdYi+UiuHG2Qd2DFmHVDiC3oDllwIpikrFWkQSis43x3ANqBbCQbhsgomEUihSp9VqoRmWQd0L8kKD6SU8GDHjrNC4Tf183GEDv+sAz5bVOKlhQ7cbgJL/jaN0T6mAexUZRR3iPg/oIpiNqBSG70Tr0Vn+RH193oXCnebcfUXLiZRTjQvwSd7VtfFq16GVymYWXQDTFh7Du+j680RRpgPIF+kxYinB2hDeButvUzM7zlSnCccL1WPZL+UYRUFQ/lI9pGN/VlxTENmQq4h68DA1ademR1NAW1wIwELSLBUUeYy9L2XIx48o5EuKkD7AgVX4ZwuyzpgJdYVuUfkohdqjm6pi3CdQrKpSu9C8aFYt5F7G2gtbt4f3gDLCItzTKNSa3odxkeF8SXZev6BF9TNvsUyBAGWRplUEGOAjDawoyzbexcKsBj44a3xbYIxRMIFNFaIxhIODlZae2Rqiu8hMloMm2cdqOrv31u6BZusxAi/6uLBrYnqNck6IFvrrti/nDBdDMOJyfQPE1QoUATNzZn+Iq+YGLv5VzV+QV3TrAMmsV6+wQ2aDnojAGtqAk6o4ODMhnXzBea676q1lPB+0EBkbMs5Hb7g5KdCfsR7xZduCk8UadXZVV1hqx72h6tJCU4LjzaAgcUKPOj/m/6i56gKpuhX2p+bZx0wbdWzrAQnzHSQuSerYvFPeYQZ98ym5q1Aid1rfjfJOqBRTMUDJm8Bt2YEwSCuKXm+YgCYd5EEdSDriaJOdru/J4r1oh+thD2/RtqYfDGJ2WzrvbNtwVscqjlBxKESR1bByEYwOhUpeSd4Uv9zAC0GMBMrogWAjcQncXATtgdP419vppT55eGu3d9KOJ0MCMtVeV3mMuFuLlLS4K3Ba2YdMJqzoN/diyLIMrQDpoUnXBWd7Pc4/0I2rK6FrAOVYr2Uiy/VERMW7AbnyV6kVHTvrrWU8EjOFX3IHJyAjnIB3C9Jj2fevwnPRecpjLnhLk3MHbyYuv1KpxNzDBYlMxRGciLBd3QlSf134iE47XQ0CYZCGzuaqVlPNnDjWmYdqFTSeP/oLCpHjw4OGD/usnWo+wG05Zcmt/O+mi+qJotUC1kHjK4ksb8Mp5O1aUkJFVYbpupmvqNwL1PiWav4m2QdqNVaaKz1QQpnm6SmKNyGM6K8xEtXQ8m/oJSV/b0F3XUA48Mc9BQt310BmjU5/jQetA3PpABUvj1R7BdeIPACXtrAbBwLBpPBmz6HWkrstZa1sw7YbdVntfltwjkIhyiIAgYRij6cXPX0lNh9v/YUijww9eGqTDDo+8Oq3PHacaNlulcOgVYwrBf40aZYL/pnZWIeDEU7GCzOTcCSzH5Mv2syBP1LWkvRz/c06wuQFdFZvzN4vuHKqq16Yz97B0HV7qXSk+9UKpRUwasmumHWAWX/3tw/ItwFRDUySMyzwsUEnbXJlTZ39sAmlKGVrAPVriTYj77EkHr1t2Ysp/ehjhLZlbSNUPEKsV70h8dpDR65TJb6Bf6PaS0lPJLxTw4TZ/u2sgfCIckz9j4QvPz9n5JeLamX4l/kraSdwGtj7an9XiYcgFImz1KgjuY/o6e+QXfYdO0NdFEBgDMZt+or+nfcgS7JOpYHlJX4OTTs/+eUaFsVogHnXCvrgEasG/sROolEY0j+C5TodJZ9SivMNpV77WstZaz1c0X2Grj8sjL9ETJ4/7xSVsIjuXxlPgKkOfVZOCTAgwxeN/BatxhY/59ADDQzljSX6D63DexdSe1mHWhkb80r0rsI6FbzmpuuRx/MOpDPq/zBk3lV2lfEK1M8rWIp50/LdZm1nntt8gcv9Rcfug/o9h7Ys5TmJ85zeeZf6hspGZeupHxg6KV+BdE+be1IrOdrAeWnNEXeqaqf6TIEO8gfQ2sp4N0HYOSkoONyUDE5Vdk5PGqqWfk5kdnPKcYfIPkVHBo2QwLdq5yXBTxUZV+2mXXA3kvc75cnHcpgYxoDiYXlF+0Pa+MT6rzULWYdqN5jkBTXmjeoOCQLq2g0jiRKGguGNkPFK/uzeRXexCz636FjCCLEHeeQHUb/WFpLQVOZrVuwGvjWQv4mNPcjw3sTggUVJSba6xheU6XM96uVMt8XnOJEdeGCocDIuctkOc8XlC84bNp047ZhzsquJEBZ74uSNxFMzuS8V8Of/klXEpgsITnlh8tRc0StJV3RtNsfUWsp4D3HfM+L8cwCYHL+4eHlL6ood4bEnSKSJrVzeG2sPX1/GfsTHsXCouNrb/pWbzRuuvbMoZE2oQJV8ZT0Qz1DcqXoaddGszO2dph1wKafqrjsLfQwGDz7P74WUglIrqSWonG7Fev5W4HPtZnpogdfWMAfUWsp3gp8nLBB42tv8m22BXhaXaE9rSVf6uWrKsR9L/L+SmGrX0vJplrLxqECFq6duSajdXKgTSVQ56+y+v4eq66fdUCrlCkPvnidxLN6Cie4sZ8CdWeIOsk6YCfWc7HdS5k4LwV8dBq6vP/jai0FTcsUCnaHRP6BTAlbcyU1yzpQ3Q+FZ+kz4xiDseeC/kr2+15ZB6r74S5a/5Za7cX8TFez2tzZvPG9sg7UuZL4S7CuA2FyBm/SC+r89VxJ3WYdsBPr2WQZ7QuiIXoaIPkVaB9Wa8kP2B4kdHLi8v15/yd4xYtw6NoL9rYFbztrzy9felxqLPnLI7ey9nRRAVVZB1zGueT+Hdav7O9njdwsygbvKFT69W8dcAHnHEqtW8k6YCf3slp5PDp3ueyPPPEFdQ3lXrWw3r7W4pK9djo7k6uZ2P/hlTJSpckJcPAp3Bq8Zq6k9SyGgv/clC6l6Gzh6fprXUncjpCI7jbrgG0oAXkBJPH//a4LFbCz92wupa4kX9j1F7fqXfpgXbBVL2zla/ul+AMfPcaF0HsOixkm97MPAUpc3a3GJAcPINrVEr1FpSxfoPeTfO0d7u/o+j+01kJoQqeEdyZfZ9r+jrQWQWStm3VA1684JwvJHl+H2v5u/Jz2XuDKrAM28Qfzt9QBbx2wik+QvdTvlXXAtMcAGL/nn0VO8mTsrxMMXMetEwzb29+DC5S8ODp+RKqr6f+gtWTwnifkbdQfBF4zTobI8Zs0euhvFx6fxr5v8IhWnd/zdUqZr1tb2RoJb+MD89o0UrLB+T2JK2yQdaCGP+XP4FdwHeret86eUSvmbKcH3IxiPWs7D4ipt0WxvlV4LjoMTf3/C3h/Ru8Ez1Ou9CTyc6XL4/Bq+nOmJ2tSUr+qlFFKkAxPuVUN0Xnrf3EKCHZFSiD6AAAAAElFTkSuQmCC",
+        "marker-symbol": "college",
+        "marker-size":"medium"
+      }
+    },
+    {
+      "name": "Pointdat",
+      "type": "geojson",
+      "url": "http://192.168.4.30:8080/TV_AssetSurvey_2019_WGS84tom.geojson"
+    }
+  ],
+  "baseMapId": "basemap-bing-aerial-with-labels",
+  "previewBaseMapId": "basemap-positron"
+}
